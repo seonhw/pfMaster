@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+      <title>cart</title>
+
+<!-- favicon -->
+      <link rel="icon" href="favicon.ico" />
+
+<!-- style -->
+      <link rel="stylesheet" href="css/cart.css">
+      <link rel="stylesheet" href="css/menubar.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+ 
+<!-- script -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+      <script src="js/common.js"></script>
+      <script src="js/gnb.js"></script>
+</head>
+<body onload="init();">
+
+<!-- wrap --> 
+<div id="wrap">
+    <div id="top"><img src="img/1_1talk.png" alt="맨위로" /></div>
+</div>
+
+<!-- header -->
+<header>
+    <nav id="nav">
+      <h1><a href="index.html"><img src="img/logo.png" alt="로고이미지"></a></h1>
+      <div id="menuArea">
+        <input type="checkbox" id="menuToggle"/>
+        <label for="menuToggle" class="menuOpen">
+          <span class="open"></span>
+        </label>
+          <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+            <div class="menuContent">
+              <ul class="menu_top">
+                <li><a href="#">about</a>
+              </li>
+                <li><a href="#">collection</a>
+                </li>
+                <li><a href="#">shop</a>
+                  <ul class="sub">
+                    <li><a href="product_LIP.html">Lip</a></li>
+                    <li><a href="product_EYE.html">Eye</a></li>
+                    <li><a href="product_FACE.html">Face</a></li>
+                    <li><a href="product_NAIL.html">Nail</a></li>
+                  </ul></li>
+                <li><a href="#">store</a>
+                  <ul class="sub">
+                    <li><a href="#">Ateler</a></li>
+                    <li><a href="#">Stockist</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">collective</a>
+                </li>
+                <li><a href="customer.html">community</a>
+                  <ul class="sub">
+                    <li><a href="customer.html">Notice</a></li>
+                    <li><a href="customer.html">Q&A</a></li>
+                  </ul>
+                </li>     
+              </ul>
+            </div>
+          </div>
+      </div>  
+      <div id="search_toggle">
+        <ul>	
+            <li class="search_toggle">
+            <a href="#"><img src="img/search_bar.png" alt="검색이미지" /></a>
+            </li>
+        </ul>
+      </div>
+      <div id="my_icon"><a href="login.html"><img src="img/login.png" alt="로그인아이콘"></a></div>
+      
+      <!-- 검색창 -->
+      <div id="search_wrap">
+        <form action="#" method="get">
+        <fieldset>		
+        <legend>검색</legend>
+            <input type="search" placeholder="검색어를 입력해 주세요."/>
+            <input type="image" src="img/search_bar.png" alt="검색바이미지">
+        </fieldset>
+        </form>
+      </div>
+    </nav>
+</header><!-- header end -->
+
+<div id="cart_wrap">
+   <h1 id="cart_tit">CART</h1>
+   <div id="cart_check">
+    <div class="cart_check1">
+	 <input type="checkbox" name="check1" id="check1" value="1">
+     <label for="check1"></label>
+	 <img src="img/cont2_li2_1.png" alt="">
+	</div>
+	<div class="cart_check2">
+	 <p>무드인핸서 마뜨얼루어</p>
+	 <p>₩19,000</p>
+	 <p>-  1  +</p>
+	 <a href="#"><img src="img/check_box_close.png" alt="cart_end"></a>
+	</div>
+   </div>
+   <div id="cart_box">
+    <hr>
+	<ul>
+	 <li><p>주문금액</p><p>₩19,000</p></li>
+	 <li><p>배송비</p><p>₩2500</p></li>
+	</ul>		 
+	 <hr>
+	 <div class="cart_end">
+	  <p>합계</p><p>₩1,9000</p>
+	 </div>	 
+	<hr>
+	<input type="button" value="주문하기" class="cart_btn">	
+   </div>
+</div><!--cart end-->
+
+<!-- box5 -->
+<div class="box box5">
+<div id="footer">
+<div class="inner">
+<div id ="left">
+<div class="logo"><img src="img/hlogo.gif" alt="푸터로고"></div>
+<div class="company">
+<p>
+  Company / Legal
+VIVAWAVE Co., Ltd.<br>|CEO. Heo Jaeseok <br>
+Seogyo-dong, Namoo Building 3F, 41, <br>
+Yanghwa-ro 7an-gil, Mapo-gu, <br>
+Seoul, Republic of Korea <br>
+Business Registraion No. 632-88-00936 <br>
+</p> 
+<h2>1644-7161</h2>
+<p>Fax. 02-6008-2717
+<br>Email. cs@vivawave.co.kr <br>
+<br>11:00 - 17:00
+<br>토,일요일 휴무
+<br><br>
+© 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
+</div> 
+</div><!-- left end --> 
+</div><!-- inner end -->
+  <div id="right">
+  <ul class="nav">
+  <li>
+    <ul>
+      <li>About Hince</li>
+      <li>힌스소개</li>
+      <li>힌스아틀리에</li>
+      <li>힌스멤버십프로그램</li>
+      <li></li>
+    </ul>
+    <ul>
+      <li>Order tracking</li>
+      <li>배송조회</li>
+    </ul>
+    <ul>
+      <li>Partnership</li>
+      <li>도매/제휴문의</li>
+      <li>해외수출문의</li>
+    </ul>
+    <ul>
+      <li>SNS</li>
+      <li>instagram</li>
+      <li>Kakaotalk</li>
+      <li>Twitter</li>
+      <li>Weibo</li>
+    </ul>
+  </li>	 
+  </ul>		 
+  </div><!-- right end-->
+</div><!-- footer END -->
+</div><!-- box5 end -->
+
+</body>
+</html>

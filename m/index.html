@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+      <title>Hince</title>
+
+<!-- favicon -->
+      <link rel="icon" href="favicon.ico" />
+
+<!-- style -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/menubar.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+ 
+<!-- script -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+      <script src="js/common.js"></script>
+      <script src="js/gnb.js"></script>
+</head>
+<body onload="init();">
+
+<!-- wrap --> 
+    <div id="wrap">
+        <div id="top"><img src="img/1_1talk.png" alt="맨위로" /></div>
+    </div>
+
+<!-- header -->
+      <header>
+          <nav id="nav">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고이미지"></a></h1>
+            <div id="menuArea">
+              <input type="checkbox" id="menuToggle"/>
+              <label for="menuToggle" class="menuOpen">
+                <span class="open"></span>
+              </label>
+                <div class="menu menuEffects">
+                  <label for="menuToggle"></label>
+                  <div class="menuContent">
+                    <ul class="menu_top">
+                      <li><a href="#">about</a>
+                    </li>
+                      <li><a href="#">collection</a>
+                      </li>
+                      <li><a href="#">shop</a>
+                        <ul class="sub">
+                          <li><a href="product_LIP.html">Lip</a></li>
+                          <li><a href="product_EYE.html">Eye</a></li>
+                          <li><a href="product_FACE.html">Face</a></li>
+                          <li><a href="product_NAIL.html">Nail</a></li>
+                        </ul></li>
+                      <li><a href="#">store</a>
+                        <ul class="sub">
+                          <li><a href="#">Ateler</a></li>
+                          <li><a href="#">Stockist</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">collective</a>
+                      </li>
+                      <li><a href="customer.html">community</a>
+                        <ul class="sub">
+                          <li><a href="customer.html">Notice</a></li>
+                          <li><a href="customer.html">Q&A</a></li>
+                        </ul>
+                      </li>     
+                    </ul>
+                  </div>
+                </div>
+            </div>  
+            <div id="search_toggle">
+              <ul>	
+                  <li class="search_toggle">
+                  <a href="#"><img src="img/search_bar.png" alt="검색이미지" /></a>
+                  </li>
+              </ul>
+            </div>
+            <div id="my_icon"><a href="login.html"><img src="img/login.png" alt="로그인아이콘"></a></div>
+            
+            <!-- 검색창 -->
+            <div id="search_wrap">
+              <form action="#" method="get">
+              <fieldset>		
+              <legend>검색</legend>
+                  <input type="search" placeholder="검색어를 입력해 주세요."/>
+                  <input type="image" src="img/search_bar.png" alt="검색바이미지">
+              </fieldset>
+              </form>
+           </div>
+          </nav>
+      </header><!-- header end -->
+      
+<!-- box1 -->
+    <div class="box box1">
+        <div class="v_box">
+              <video muted playsinline autoplay loop>
+                <source src="videos/visual_h.mp4" type="video/mp4">
+              </video>
+              <div class="v_tit">
+                <p>OWN YOUR MOMENT</p>
+                <p class="v_text">&nbsp;&nbsp;&nbsp;&nbsp;풍성해지는 당신의 시간</p>
+              </div>
+        </div>
+          <div id="container">
+           <h4>collection</h4>
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide b_cont">
+                        <a href="detail_face.html"><img src="img/bn3.png" alt="bn3"></a>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 Color</p><p>스킨 파운데이션</p>
+                      </div>
+                      <div class="swiper-slide b_cont">
+                        <a href="detail_face_con.html"><img src="img/bn1.png" alt="bn1"></a>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 Color</p><p>스킨 커버컨실러</p>
+                      </div>
+                      <div class="swiper-slide b_cont">
+                        <a href="detail_eye_browshaper.html"><img src="img/bn2.png" alt="bn2"></a>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 Color</p><p>&nbsp;브로우 쉐이퍼</p>
+                      </div>
+                      <div class="swiper-slide b_cont">
+                        <a href="#"><img src="img/bn5.png" alt="bn5"></a>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;클리어</p><p>래디언스 밤</p>
+                      </div>
+                      <div class="swiper-slide b_cont">
+                        <a href="detail_eye.html"><img src="img/bn6.png" alt="bn6"></a>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13 Color</p><p>뉴뎁스 아이섀도</p>
+                      </div>
+                      <div class="swiper-slide b_cont">
+                        <a href="#"><img src="img/bn4.png" alt="bn4"></a>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 Color</p><p>시그니처 펜슬</p>
+                      </div>
+                  </div>
+                  <div><img src="img/right.png" alt="right_icon" class="swiper-button-next"></div>
+                  <div><img src="img/left.png" alt="left_icon" class="swiper-button-prev"></div>
+              </div>
+          </div>
+      <script> //배너 슬라이드 스크립트
+                  
+                      new Swiper('.swiper-container', {
+                  
+                          slidesPerView : 3, // 동시에 보여줄 슬라이드 갯수
+                          spaceBetween :-30, // 슬라이드간 간격
+                          slidesPerGroup : 3, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+                          loopFillGroupWithBlank : true,
+                          loop : true, // 무한 반복
+                          autoplay: { delay: 3000, },
+                          navigation : { // 네비게이션
+                              nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+                  
+                              prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+                          },
+                      });
+      </script>
+    </div><!-- box1 end -->
+
+<!-- box2 -->
+      <div class="box cont2">
+        <div class="none"></div>
+      <div class="swiper-container cont2_swipernew">
+          <div class="swiper-wrapper cont2_swiper">
+            <div class="swiper-slide cont2_li">
+          <img src="img/cont2_li_1.png" alt="#">
+          <p>무드 인서 쉬어</p><p>미니컬렉션</p><span>₩23,000</span>
+              <a href="" class="more_cont2"><img src="img/cont2_more.png" alt="#"></a>
+        </div><!--리스트1-->
+        <div class="swiper-slide cont2_li">
+          <img src="img/cont2_li_5.png" alt="#">
+          <p>무드 인핸서 젤글로스</p><p>라이트플로우</p><span>₩23,000</span>
+              <a href="" class="more_cont2"><img src="img/cont2_more.png" alt="#"></a>
+        </div><!--리스트2-->
+        <div class="swiper-slide cont2_li">
+          <img src="img/cont2_li_2.png" alt="#">
+          <p>무드 인핸서 마뜨</p><p>어드레스</p><span>₩19,000</span>
+              <a href="" class="more_cont2"><img src="img/cont2_more.png" alt="#"></a>
+        </div><!--리스트3-->
+        <div class="swiper-slide cont2_li">
+          <img src="img/cont2_li2_1.png" alt="#">
+          <p>뉴 뎁스 아이팔레트</p><p>오프밸런스</p><span>₩39,000</span>
+              <a href="" class="more_cont2"><img src="img/cont2_more.png" alt="#"></a>
+        </div><!--리스트4-->
+        <div class="swiper-slide cont2_li">
+          <img src="img/cont2_li2_3.png" alt="#">
+          <p>뉴 앰비언스 마스카라</p><p>언폴드</p><span>₩18,900</span>
+              <a href="" class="more_cont2"><img src="img/cont2_more.png" alt="#"></a>
+        </div><!--리스트5-->
+        <div class="swiper-slide cont2_li">
+          <img src="img/cont2_li3_3.png" alt="#">
+          <p>트루 디멘션 치크</p><p>샤인 아웃</p><span>₩23,000</span>
+              <a href="" class="more_cont2"><img src="img/cont2_more.png" alt="#"></a>
+        </div><!--리스트6-->
+          </div>
+          <div class="swiper-pagination">
+        </div>
+        </div>
+        <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+          <script>
+          var swiper1 = new Swiper(".cont2_swipernew", {
+        slidesPerView: 3,
+          spaceBetween: 10,
+        loop: true,
+        autoplay: { delay: 3000, },
+        observer: true,
+            observeParents: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+          });
+          </script>
+        <div class="cont2_content">
+        <h1 class="cont2_tit">Signature Me</h1>
+        <p class= "cont2_txt">선명해지는 고유의 결.<br>시그니처 컬렉션.</p>
+        <div class="cont2_visual1"></div>
+        <div class="cont2_visual2"></div>
+        <div class="cont2_visual3">
+        <div class="cont2_v3_inner">
+          <h1 class="cont2_v3_tit">The hince Collection</h1>
+          <p>풍성해지는 당신의 시간</p>
+        <a href="#" class="more"><p>+MORE</p></a>
+        </div>
+        </div>
+      </div>	
+      </div><!-- box2 end -->  
+
+<!-- box3 -->
+      <div class="box box3">
+      <div class="box3_img">
+      <h3>OWN YOUR MOMENT</h3>
+      <h5>The Moment Collection</h5>
+      <a href="#"><p>more +</p></a>
+      </div>
+      </div><!-- box3 end -->
+
+<!-- box4 -->
+      <div class="box box4">
+        <!--슬라이더 이미지-->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="img/atelier14.jpg" alt="아틀리에이미지1"></a>
+                <h3>Hince atelier</h3>
+                <h5>힌스의 무드를 경험할 수 있는 쇼룸</h5>
+                <a href="#"><p>VIEW SHOWROOM</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/5.jpg" alt="슬라이드이미지1"></a>
+                <h3>About Hince</h3>
+                <h5>Mood narative brand, Hince</h5>
+                <a href="#"><p>VIEW SHOWROOM</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/atelier4.jpg" alt="아틀리에이미지2"></a>
+                <h3>Hince atelier</h3>
+                <h5>1st flagship store in Seongsu</h5>
+                <a href="#"><p>VIEW SHOWROOM</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/atelier2.jpg" alt="아틀리에이미지3"></a>
+                <h3>Hince atelier</h3>
+                <h5>힌스의 무드를 경험할 수 있는 쇼룸</h5>
+                <a href="#"><p>VIEW SHOWROOM</p></a></div>
+              </div>
+          </div><!--슬라이더 끝-->
+        <div id="event">
+          <div class="event_text">
+          <H6>EVENT</H6>
+          <h3>Special Gift <br>Organza <br> Mesh Bag</h3>
+          <h5>모든 구매 고객에게<br>메쉬백을 선물로 드립니다.<br>(컬러 랜덤)</h5>
+            <a href="https://hince.co.kr/board/community/list_event.html?board_no=2"><p>GO & GET IT ></p></a>
+          </div>
+    
+          <div class="event_img">
+          <img src="img/event.jpg" alt="이벤트이미지" style="width:55%;height:55%">
+          </div>
+        </div>
+      </div><!-- box4 end-->
+
+<!-- box5 -->
+    <div class="box box5">
+    <div id="footer">
+    <div class="inner">
+    <div id ="left">
+    <div class="logo"><img src="img/hlogo.gif" alt="푸터로고"></div>
+    <div class="company">
+    <p>
+      Company / Legal
+    VIVAWAVE Co., Ltd.<br>|CEO. Heo Jaeseok <br>
+    Seogyo-dong, Namoo Building 3F, 41, <br>
+    Yanghwa-ro 7an-gil, Mapo-gu, <br>
+    Seoul, Republic of Korea <br>
+    Business Registraion No. 632-88-00936 <br>
+    </p> 
+    <h2>1644-7161</h2>
+    <p>Fax. 02-6008-2717
+    <br>Email. cs@vivawave.co.kr <br>
+    <br>11:00 - 17:00
+    <br>토,일요일 휴무
+    <br><br>
+    © 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
+    </div> 
+    </div><!-- left end --> 
+    </div><!-- inner end -->
+      <div id="right">
+      <ul class="nav">
+      <li>
+        <ul>
+          <li>About Hince</li>
+          <li>힌스소개</li>
+          <li>힌스아틀리에</li>
+          <li>힌스멤버십프로그램</li>
+          <li></li>
+        </ul>
+        <ul>
+          <li>Order tracking</li>
+          <li>배송조회</li>
+        </ul>
+        <ul>
+          <li>Partnership</li>
+          <li>도매/제휴문의</li>
+          <li>해외수출문의</li>
+        </ul>
+        <ul>
+          <li>SNS</li>
+          <li>instagram</li>
+          <li>Kakaotalk</li>
+          <li>Twitter</li>
+          <li>Weibo</li>
+        </ul>
+      </li>	 
+      </ul>		 
+      </div><!-- right end-->
+    </div><!-- footer END -->
+    </div><!-- box5 end -->
+
+</body>
+</html>

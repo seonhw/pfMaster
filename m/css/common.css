@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@font-face {
+font-family: 'Arita-buri-SemiBold';
+src: url
+('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') 
+format('woff');
+font-style: normal;
+}
+
+    #menuArea input {display: none;}
+    .open {
+      background-color: #a36d6a;
+      width: 24px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      cursor: pointer;
+      position: relative;
+      top: 8px;
+    }
+    .open:before {
+      content: "";
+      background-color: #a36d6a;
+      width: 24px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      position: relative;
+      top: -8px;
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+    }
+    
+    .open:after {
+      content: "";
+      background-color: #a36d6a;
+      width: 24px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      position: relative;
+      top: 4px;
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+    }
+    
+    .menuOpen {
+      width: 24px;
+      height: 20px;
+      display: block;
+      padding: 15px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    .menuOpen:hover .open:before {
+      top: -9px;
+    }
+    
+    .menuOpen:hover .open:after {
+      top: 5px;
+    }
+    
+    .menu {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: rgba(163, 109, 106,0.5);
+    }
+    
+    .menu label {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-size: 100%;
+      cursor: pointer;
+    }
+    .menuOpen{
+        margin-top:-70px;
+        padding-right: 23px;
+    } 
+    .menu .menuContent {
+      position: relative;
+      top: 40%;
+      font-size: 54px;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-top: -110px;
+    }
+    
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+    }
+    
+    .menu ul li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 10px 0;
+    }
+    .menu .sub li a {text-transform: capitalize;}
+    .menu ul li a:hover {color: #a36d6a;}
+    .menu ul li:hover {background: rgba(255, 255, 255,0.3);}
+    
+    .menuEffects {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+    }
+    .menuEffects ul {
+      transform: translateY(0%);
+      transition: all 0.5s;
+    }
+    
+    #menuToggle:checked ~ .menuEffects {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s;
+    }
+    
+    #menuToggle:checked ~ .menuEffects ul {
+      opacity: 1;
+    }
+    
+    #menuToggle:checked ~ .menuOpen .open {
+      background-color: transparent;
+    }
+    
+    #menuToggle:checked ~ .menuOpen .open:before {
+      content: "";
+      background-color: white;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+    
+    #menuToggle:checked ~ .menuOpen .open:after {
+      content: "";
+      background-color: white;
+      transform: rotate(-45deg);
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+    
+    #menuToggle:not(:checked) ~ .menuEffects ul {
+      transform: translateY(-30%);
+    }
+
+
+/* reset */
+body::-webkit-scrollbar { display: none; }
+
+
+/* wrap */
+
+
+/* ������ */
+#wrap #top {width:120px;height:64px;opacity: 0.8;
+line-height:64px;text-align: center;margin-top: 50px;position: fixed;z-index:999;display: none;
+border-radius:100px; bottom:30px;right:2%;color:#aaa;font-size:1.4em}
+#wrap #top img{width:120px;height:64px;cursor:pointer;}
+
+    
+@font-face {
+font-family: 'Arita-buri-SemiBold';
+src: url
+('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') 
+format('woff');
+font-style: normal;
+}
+
+    
+/* === reset === */
+html,body{ 
+    margin:0; 
+    padding: 0; 
+    width:100%; 
+    height:100%;
+    background-color: #f8f4f3;
+}
+ul,li,ol {list-style:none;}
+a {text-decoration:none;}
+p {font-family: 'Noto Sans KR';}
+fieldset {border:0}
+legend {display:none; font-size:0}
+.blind {display: none;font-size:0}
+
+#nav{
+    height:8%;
+    width: 100%;
+    background-color:#f8f4f3;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    float: left;
+}
+
+
+/* === header === */
+header{width: 100%;height: 8%;display:block;z-index:500}
+header #nav h1 {}
+header #nav h1 img{
+    width: 100px;
+    height: 8%;
+    margin-top: -23px;
+    margin-left: 26px;
+}
+header #menu_icon{position:absolute;margin: 18px;right:3px;top: 0;}  
+header #menu_icon img{width: 26px;height: 20px;z-index:30;}  
+
+.menuContent ul .sub li a{font-size: 22px;}
+
+header #search_toggle{
+    position:absolute;
+    margin-top: -1px;
+    right: 105px;
+    top: 0;
+    width: 26px;
+    height: 26px
+}
+header #my_icon {position:absolute;margin-top: 16px;right: 110px;top: 0;} 
+header:after {clear:both;content:'';display: block;}
+
+/* === search box === */
+#search_wrap{position: relative;}
+#search_wrap {z-index:5555;height: 50px;display:none;width:100%;}
+#search_wrap form {top:0;z-index:10;}
+#search_wrap form input[type=search] {
+-moz-appearance:none;
+-webkit-appearance:none;
+-ms-appearance:none;
+-o-appearance:none;
+appearance:none;border:none;background:#423836;height:40px;width:100%; opacity: 0.5;border-radius:2px;}
+#search_wrap form input[type=search]::placeholder {text-indent:20px;color:#d3d3d3;z-index:10;}
+#search_wrap form input[type=image] {position:absolute;right:30px;top:17px;height:20px}
+#search_wrap:after {content:'';display:block;clear:both;}
+#search_wrap form input {text-align: center;color:#fff;font-weight: bold;}
+
+
+/* === footer === */
+/*footer*/
+.box5{}
+#footer{
+    width: 100%;
+    height: 350px;
+    background-color: #a36d6a;
+    color: #ddd;
+    position: absolute;
+    padding-bottom: 0;
+    font-size: 8px;
+}
+#footer .inner{position: relative;}
+#footer .inner #left{position: absolute;height: 250px;left: 40px;}
+#footer #right{position: absolute;right: 40px;top:10px}
+
+
+

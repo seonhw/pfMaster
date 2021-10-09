@@ -1,0 +1,47 @@
+  @import url(style.css); 
+  
+  li {list-style: none;}
+  body {background-color:#f8f4f3;}	
+  p {text-overflow: ellipsis;}
+  input {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;}
+
+  /*아리따부리*/
+   @font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-style: normal;}
+  
+  /*layout*/
+  #cart_tit {font-size: 30px;color: #a36d6a;font-family: 'Arita-buri-SemiBold';margin-top: 30px;}
+  #cart_wrap {width: 90%;height:100%;background-color: #f8f4f3;display: table; margin-left: auto; margin-right: auto;text-align: center;margin-top: 30px;}
+  #cart_check {width: 90%;height: 20%;margin-left: auto; margin-right: auto;text-align: center;}
+  #cart_box {width: 90%;margin-left: auto; margin-right: auto;position:relative;display: inline-block;}
+  .cart_check1 {width: 50%;height:100%;background-color: #ede2e1;position:relative;float: left;}
+  .cart_check2 {width: 50%;height:100%;background-color: #ede2e1;position:relative;left: 50%;}
+
+  /*check box*/
+  #check1 {position:absolute;top: 10px;display: inline-block;width: 20px;height: 20px;left:5px;cursor: pointer;background: url('img/check_box.png') no-repeat 0 1px / contain;}
+  input[type="checkbox"] {display: none;}
+  .cart_check1 img {max-width:70%;max-height:70%;margin-left: 20px;margin-top:13px;}
+  .cart_check2 a img {width: 18px;position:absolute;right: 5px;top: 10px;}
+
+  /*check box txt*/
+  .cart_check2 > p {position:absolute;top: 20px;font-family:'Noto+Sans+KR';font-size: 12px;font-weight:bold;color: #a36d6a;}
+  .cart_check2 p:nth-of-type(2) {position:absolute;top: 40px;font-family:'Noto+Sans+KR';font-size: 11px;color: #4e3836}
+  .cart_check2 p:nth-of-type(3)  {position:absolute;top: 70px;color: #4e3836}
+ 
+  /*check box2 txt*/
+  hr {border:1px solid #a36d6a}
+  #cart_box ul {width:100%;height: 60px;display: block;}
+  #cart_box li {height: 30px;width: 100%;display: inline-block;margin-left: -80px;}
+  #cart_box li p:nth-of-type(1)  {float: left;line-height: 10px;font-size: 12px;color: #a36d6a;position:absolute;left: 10px;}
+  #cart_box li p:nth-of-type(2)  {float: left;line-height: 10px;font-size: 12px;color: #4e3836;position:absolute;right:10px;}
+  .cart_end {height: 30px;width: 100%;display: inline-block;}
+  .cart_end p {line-height: 10px;float: left;font-size: 12px;}
+  .cart_end p:nth-of-type(1) {color: #a36d6a;position:absolute;left: 10px;}
+  .cart_end p:nth-of-type(2) {color: #4e3836;position:absolute;right:10px;}
+
+  .cart_btn {width: 100%;height: 40px;border:none;background-color: #a36d6a;color: #f8f4f3;font-family:'Noto+Sans+KR';font-weight: bold;margin-top: 10px;}

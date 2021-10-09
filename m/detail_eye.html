@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+      <title>eye-아이섀도우</title>
+
+<!-- favicon -->
+      <link rel="icon" href="favicon.ico" />
+
+<!-- style -->
+      <link rel="stylesheet" href="css/detail_style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css" />
+      <link rel="stylesheet" href="css/jquery.bxslider.css">
+      
+<!-- script -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="js/detail_slider.js"></script>	
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+      <script src="js/common.js"></script>
+      <script src="js/gnb.js"></script>
+</head>
+<body onload="init();">
+
+<!-- wrap --> 
+<div id="wrap">
+    <div id="top"><img src="img/1_1talk.png" alt="맨위로" /></div>
+</div>
+
+<!-- header -->
+<header>
+    <nav id="nav">
+      <h1><a href="index.html"><img src="img/logo.png" alt="로고이미지"></a></h1>
+      <div id="menuArea">
+        <input type="checkbox" id="menuToggle"/>
+        <label for="menuToggle" class="menuOpen">
+          <span class="open"></span>
+        </label>
+          <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+            <div class="menuContent">
+              <ul class="menu_top">
+                <li><a href="#">about</a>
+              </li>
+                <li><a href="#">collection</a>
+                </li>
+                <li><a href="#">shop</a>
+                  <ul class="sub">
+                    <li><a href="product_LIP.html">Lip</a></li>
+                    <li><a href="product_EYE.html">Eye</a></li>
+                    <li><a href="product_FACE.html">Face</a></li>
+                    <li><a href="product_NAIL.html">Nail</a></li>
+                  </ul></li>
+                <li><a href="#">store</a>
+                  <ul class="sub">
+                    <li><a href="#">Ateler</a></li>
+                    <li><a href="#">Stockist</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">collective</a>
+                </li>
+                <li><a href="customer.html">community</a>
+                  <ul class="sub">
+                    <li><a href="customer.html">Notice</a></li>
+                    <li><a href="customer.html">Q&A</a></li>
+                  </ul>
+                </li>     
+              </ul>
+            </div>
+          </div>
+      </div>  
+      <div id="search_toggle">
+        <ul>	
+            <li class="search_toggle">
+            <a href="#"><img src="img/search_bar.png" alt="검색이미지" /></a>
+            </li>
+        </ul>
+      </div>
+      <div id="my_icon"><a href="login.html"><img src="img/login.png" alt="로그인아이콘"></a></div>
+      
+      <!-- 검색창 -->
+      <div id="search_wrap">
+        <form action="#" method="get">
+        <fieldset>		
+        <legend>검색</legend>
+            <input type="search" placeholder="검색어를 입력해 주세요."/>
+            <input type="image" src="img/search_bar.png" alt="검색바이미지">
+        </fieldset>
+        </form>
+      </div>
+    </nav>
+</header><!-- header end -->
+
+ <!-- Container for the image gallery -->
+  <div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+      <img src="img/eye1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+      <img src="img/eye2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+      <img src="img/eye3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+      <img src="img/eye4.jpg" style="width:100%">
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/eye1_mini.jpg" style="width:100%" onclick="currentSlide(1)" alt="NEW DEPTH EYESHADOW">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/eye2_mini.jpg" style="width:100%" onclick="currentSlide(2)" alt="NEW DEPTH EYESHADOW">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/eye3_mini.jpg" style="width:100%" onclick="currentSlide(3)" alt="NEW DEPTH EYESHADOW">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/eye4_mini.jpg" style="width:100%" onclick="currentSlide(4)" alt="NEW DEPTH EYESHADOW">
+    </div>
+  </div><!-- row end -->
+ </div><!-- container-image gallery end -->
+
+
+<div id="spec">
+			<!--컬러-->
+     <div class="con2">
+                
+				<h2>뉴 뎁스 아이섀도우</h2>
+			    <p>언프레임</p>
+				<ul>
+                    <li>
+					 <form action="#" name="form1" class="formc">
+				      <fieldset>
+
+				       <legend class="blind">가격계산폼</legend>
+				       <label for="su1">￦</label>18,000 <br><br>
+
+					   <select name="fColor" id="fc" onChange="fcolorChange()">
+					   <option value="--">SELECT COLOR</option>
+					   <option value="#b96f7c">뉴 뎁스</option>
+					   <option value="#d7b9ae">포인트 아웃</option>
+					   <option value="#c89671">언프레임</option>
+					   <option value="#b59073">이니셜</option>
+					   <option value="#debeb1">리플렉션</option>
+					   <option value="#a48872">어니스티</option>
+					   <option value="#63442f">빌드 온</option>
+					   <option value="#c3868e">뮤즈오버</option>
+					   <option value="#d68f61">얼루어 인 모션</option>
+					   <option value="#a9989e">인스파이어</option>
+					   <option value="#982528">어센틱</option>	
+				      </select><br><br>
+                      <div class="tVal">color</div>
+				      <br>
+
+				       <input type="hidden" name="su1" id="su1"  value="18000"/><br />
+				       <label for="su2">수량</label>:<input type="number" min="1" max="10" start="1"  name="su2" id="su2" value="1"/> 
+				       <br />	  
+				      <input type="text" id="resVal" /> <br />	 <br />
+				      <input type="button" value="TOTAL" onclick="cal_print(su1.value,su2.value);" id="total" />&nbsp;	 
+				      <a href="cart.html"><input type="button" id="shopping" onclick="basketGo()" value="CART"/></a><br />	    
+				      </fieldset>
+				     </form>   				
+					</li>			
+				</ul>
+     </div><!-- //detail page -->
+	
+			<!--제품 상세이미지-->
+
+			<div class="specimg">
+				<li><img src="img/eye_detail.jpg"  alt="제품상세이미지1" style="width:100%"/></li>
+			</div>
+</div><!--spec-->	
+		
+
+<!--제품 상세 안내사항-->
+			<div class="costomer">
+				<div class="cont cont1">
+					<dl>
+						<dt>상품정보 / 전성분 안내<span><img src="img/enter.png" alt="보기" /></span></dt>
+						<dd>본 상품정보는 [공정거래위원회의 전자상거래 등에서의 상품정보제공 고시]에 따라 작성되었습니다.<br /><br>
+						</dd>
+						<dt>배송 / 교환 / 반품 안내<span><img src="img/enter.png" alt="보기" /></span></dt>
+						<dd>변심 반품의 경우 왕복배송비를 차감한 금액이 환불되며, 제품 및 포장 상태가 재판매 가능하여야 합니다.<br /><br>
+						</dd>
+				</div><!-- cont1 -->
+             </div><!-- customer end -->
+
+ <div class="box box5">
+	 <div id="event2">
+		 <div class="event2_text">
+		   <div id="img_wrap">
+           <ul id="na">
+	       </ul>
+          </div><!-- img_wrap -->
+	     </div>
+	 </div>
+<div id="footer">
+	  <div class="inner">
+	  <div id ="left">
+       <div class="logo"><img src="img/hlogo.gif" alt="푸터로고">
+	   <div class="company">
+	    <p>
+	     Company / Legal
+		VIVAWAVE Co., Ltd.<br>|CEO. Heo Jaeseok <br>
+		Seogyo-dong, Namoo Building 3F, 41, <br>
+		Yanghwa-ro 7an-gil, Mapo-gu, <br>
+		Seoul, Republic of Korea <br>
+		Business Registraion No. 632-88-00936 <br>
+		</p> 
+	    <h2>1644-7161</h2>
+		<p>Fax. 02-6008-2717
+		<br>Email. cs@vivawave.co.kr <br>
+		<br>11:00 - 17:00
+		<br>토,일요일 휴무
+		<br><br>
+		© 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
+		</div>
+	  </div><!-- left end -->
+	 </div><!-- inner end -->
+	 <div id="right">
+		<ul class="nav">
+		 <li>
+		 	<ul>About Hince
+			 <li>힌스소개</li>
+			 <li>힌스아틀리에</li>
+			 <li>힌스멤버십프로그램</li>
+			 <li></li>
+			</ul>
+			<ul>Order tracking
+			 <li>배송조회</li>
+		    </ul>
+			<ul>Partnership
+			 <li>도매/제휴문의</li>
+			 <li>해외수출문의</li>
+		    </ul>
+			<ul>SNS
+			 <li>instagram</li>
+			 <li>Kakaotalk</li>
+			 <li>Twitter</li>
+			 <li>Weibo</li>
+		    </ul>
+		 </li>	 
+		</ul>		
+	 </div><!-- right end -->
+ </div><!-- footer END -->
+</div><!-- box5 footer end -->
+
+</div><!-- wrap end -->
+
+ <!-- script link -->
+  <script>
+  function shopGo(){
+	   alert('continue shopping');
+	   location.href="index.html";
+	 }
+  function fcolorChange() {
+    var sel = document.getElementById('fc');
+
+	var fValue;
+	for(var i=0;i<sel.options.length;i++){
+	   if(sel.options[0].selected==true){
+	      alert('색상선택');
+		  return false;
+	   }else if(sel.options[i].selected == true){
+	      fValue = sel.options[i].value;
+          $('.tVal').text(fValue).css('background',''+fValue+'');
+		  break;
+	   }
+	} //for end
+  } 
+  function comma(num){
+    var len, point, str;  
+       
+    num = num + "";  
+    point = num.length % 3 ;
+	
+    len = num.length;  
+   
+    str = num.substring(0, point);  
+    while (point < len) {  
+        if (str != "") str += ",";  
+        str += num.substring(point, point + 3);  
+        point += 3;  
+    }  
+     
+    return str;
+ 
+   }
+  
+  function cal_print(num,num2){
+	 
+	   var snum=num;
+	   var snum2=num2;
+
+	   var res =snum*snum2;
+	   var result = comma(res);
+	   
+	    /*document.getElementById("resVal").innerHTML=result+"원";*/
+       document.getElementById("resVal").value=result+"원";
+  }
+  </script>
+  </body>
+</html>

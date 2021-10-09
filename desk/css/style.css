@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* ========== reset ========== */
+
+	 * {margin:0;padding:0;}
+	 body {font-family: '나눔고딕';}
+	 li {list-style: none;}
+	 a {text-decoration: none;color: #000;}
+	 .blind {font-size:0}
+	 ::selection { color: #000;background:#FFFF5A; }
+
+	 @keyframes visualtit{
+	 0%  {opacity: 0;transform:translate}
+	 15% {opacity: 1;transform:translate}
+	 80% {opacity: 1;transform:translate}
+	 90% {opacity: 0;transform:translate}
+	 100% {opacity: 0;transform:translate}
+	 }
+	 
+	 @keyframes visualtxt{
+	 0%  {opacity: 0;transform:translate}
+	 15% {opacity: 1;transform:translate}
+	 30% {opacity: 1;transform:translate}
+	 80% {opacity: 0;transform:translate}
+	 90% {opacity: 0;transform:translate}
+	 100% {opacity: 0;transform:translate}
+	 } 
+
+
+/* ========== layout ========== */
+
+	 #header {
+	 height: 100px;
+	 background: url(../images/h_bk1.png) repeat-x 0 0;
+	 }
+	 #header .inner {width: 1200px;position: relative;margin:0 auto;z-index:100;}
+    
+	 #visual {
+	 height: 500px;
+	 background: url(../images/visual.png) no-repeat 0 0;
+	 width: 100%;margin:0 auto;
+	 }
+
+	 #contents {height: 950px;position: relative;}
+	 #contents .contents1 {height: 300px;position: relative;}
+	 #contents .contents2 {height: 350px;position: relative;}
+	 #contents .contents3 {height: 300px;position: relative;}
+
+	 #footer {
+	 height: 130px;position: relative;
+	 background: url(../images/f_bk1.png) repeat-x 0 0;
+	 }
+
+
+/* ========== header ========== */
+	 
+	 #header .inner .logo {width: 250px;}
+	 #header .inner .logo  {position: absolute;left: 50px;top:-10px;bottom:10px}
+	 
+	 #header .inner .gnb {position:absolute;right:10px;top:60px;font-size:18px;}
+	 #header .inner .gnb li {float: left;width: 180px;font-weight: bold;text-align: center;}
+     
+	 #header .inner li > a {display:block;padding-bottom:16px}
+     #header .inner li > a:hover {color:#2e6eea;}
+
+     #header .inner li .sub {display:none;width:100px;height:auto;}
+     #header .inner li:hover .sub {display:block}
+
+   	 #header .inner .sub > li {
+	 width:180px;height:50px;line-height:50px;
+	 font-size:16px;font-weight: normal;
+	 background-color:#2e6eea;
+	 text-align:center
+	 }
+     #header .inner .sub li a {display:block;color:#fff}
+     #header .inner .sub li a:hover {
+	 background-color:rgba(999,999,999,0.1);
+	 padding-bottom:2px;
+	 color:#fff
+	 }
+    
+	 #header .inner .lnb {
+	 width: 144px;
+     position: absolute;right:10px;
+	 font-size:14px;
+	 }
+     #header .inner .lnb li {float: left;margin-right: 20px;}
+	 #header .inner .lnb li:after {content:'|';display:inline;position: absolute;top:0;right:106px}
+	 #header .inner .lnb li:last-child:after {content:'';}
+     #header .inner .lnb li a {color: #6d6d6d;}
+	 #header .inner .lnb li a:hover {color: #000;}
+	     
+
+/* ========== visual ========== */
+     
+	 #visual {position: relative;}
+	 #visual .v_tit {
+	 position: absolute;
+	 top:240px;left: 500px;
+	 font-size:60px;font-weight: 700;color: #fff;
+	 animation: visualtit 8s infinite;
+	 }
+	 #visual .v_text {
+	 position: absolute;
+	 top:230px;left: 500px;
+	 font-size:20px;color: #fff;
+	 animation: visualtxt 8s infinite;
+	 }
+	 
+
+/* ========== contents ========== */
+/* contents1 */
+
+	  #contents .contents1 {width: 1200px;margin:0 auto;background-color: #fff;}
+	 
+	  #contents .contents1 .c_tit {
+	  text-align: center;font-size:26px;
+	  padding-top:50px;padding-bottom:26px
+	  }
+	
+	  #contents .contents1 .c_list li {
+	  float: left;width: 150px;height: 80px;
+	  text-align: center;font-size:16px;font-weight: 400;
+	  padding-left:18px;padding-top:60px;padding-bottom:30px;
+	  border:1px solid #eee;box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+	  opacity:0.9;background: #fff;
+	  transition:background 0.8s ease-out;
+	  }
+
+	  #contents .contents1 .c_list li:hover {background: #2e6eea;}
+	  #contents .contents1 .c_list a:hover {color: #fff;}
+
+/* contents2 */
+
+	 #contents .contents2 {width: 1200px;margin:0 auto;}
+	
+/* cont1 인증서 */
+        
+	  #contents .contents2 .cont1 {
+	  width: 540px;height: 300px;
+	  position: absolute; top:34px;left: 30px;
+	  }
+      #contents .contents2 .cont1 .c_img {width: 540px;height: 300px;}
+	  #contents .contents2 .cont1 .c_img:hover {opacity: 0.8;}
+
+	  #contents .contents2 .cont1 .c_text{
+	  position: absolute;top:20px;left:32px;
+	  font-size:26px;
+      }
+	  #contents .contents2 .cont1 .c_text a {color: #fff;}
+
+/* cont2 상담문의 */
+
+	  #contents .contents2 .cont2 {
+	  width: 540px;height: 300px;
+	  position: absolute; top:34px;right: 30px;
+	  }
+	  #contents .contents2 .cont2 .c_img {width: 540px;height: 300px;}
+	  #contents .contents2 .cont2 .c_img:hover {opacity: 0.8;}
+	  #contents .contents2 .cont2 .c_text{
+	  position: absolute;top:20px;left:32px;
+	  font-size:26px;
+      }
+	  #contents .contents2 .cont2 .c_text a {color: #fff;}
+	
+/* contents3 */
+
+	 #contents .contents3 {width: 1200px;margin:0 auto;}
+
+/* cont1 공지사항 */
+
+      #contents .contents3 .cont1 {
+	  width: 520px;height: 230px;
+	  position: absolute; top:34px;left: 50px;
+	  border:1px solid #eee;
+	  } 
+      #contents .contents3 .cont1 .c_tit {
+	  position: absolute;top:20px;left:32px;
+	  font-size:26px;
+	  }
+	  #contents .contents3 .gongji {
+	  width: 500px;height: 200px;
+	  position: absolute;top:80px;left:32px;
+	  }
+	  #contents .contents3 .gongji li {padding-top:10px}
+	  #contents .contents3 .gongji li a {color: #6d6d6d;}
+	  #contents .contents3 .gongji li a:hover {color: #2e6eea;}
+	  #contents .contents3 .gongji li span{float: right;margin-right:60px;color: #6d6d6d;}
+
+	  #contents .contents3 .cont1 .more {
+	  float: right;padding-right:30px;padding-top:30px;
+	  color: #6d6d6d;}
+
+/* cont2 지도 */
+
+	  #contents .contents3 .cont2 {
+	  width: 480px;height: 250px;
+	  position: absolute; top:34px;right: 50px;
+	  border:1px solid #eee;
+	  }
+	  #contents .contents3 .cont2 .c_map {
+	  width: 480px;height: 250px;
+	  }
+
+
+/* ========== footer ========== */
+	 
+     #footer .f_logo {position: absolute;left: 380px;top:25px}
+	 #footer .f_list li {width: 900px;position: absolute;top:4px;left: 580px;}
+	 #footer .f_list li a {color: #8f8f8f;font-size:12px}
+	 #footer .f_list li a:hover {color: #6d6d6d;}
+	 #footer .f_text {
+	 width: 900px;
+	 color: #8f8f8f;font-size:12px;font-style: normal;
+	 position: absolute;top:60px;left: 580px;
+	 }
+	 #footer .copyright {width: 900px;color: #8f8f8f;font-size:12px;position: absolute;top:80px;left: 580px;}
+	

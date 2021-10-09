@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+      <title>face-컨실러</title>
+
+<!-- favicon -->
+      <link rel="icon" href="favicon.ico" />
+
+<!-- style -->
+      <link rel="stylesheet" href="css/detail_style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css" />
+      <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+<!-- script -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+      <script src="js/detail_slider.js"></script>	
+      <script src="js/common.js"></script>
+      <script src="js/gnb.js"></script>
+</head>
+<body onload="init();">
+
+<!-- wrap --> 
+<div id="wrap">
+    <div id="top"><img src="img/1_1talk.png" alt="맨위로" /></div>
+</div>
+
+<!-- header -->
+<header>
+    <nav id="nav">
+      <h1><a href="index.html"><img src="img/logo.png" alt="로고이미지"></a></h1>
+      <div id="menuArea">
+        <input type="checkbox" id="menuToggle"/>
+        <label for="menuToggle" class="menuOpen">
+          <span class="open"></span>
+        </label>
+          <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+            <div class="menuContent">
+              <ul class="menu_top">
+                <li><a href="#">about</a>
+              </li>
+                <li><a href="#">collection</a>
+                </li>
+                <li><a href="#">shop</a>
+                  <ul class="sub">
+                    <li><a href="product_LIP.html">Lip</a></li>
+                    <li><a href="product_EYE.html">Eye</a></li>
+                    <li><a href="product_FACE.html">Face</a></li>
+                    <li><a href="product_NAIL.html">Nail</a></li>
+                  </ul></li>
+                <li><a href="#">store</a>
+                  <ul class="sub">
+                    <li><a href="#">Ateler</a></li>
+                    <li><a href="#">Stockist</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">collective</a>
+                </li>
+                <li><a href="customer.html">community</a>
+                  <ul class="sub">
+                    <li><a href="customer.html">Notice</a></li>
+                    <li><a href="customer.html">Q&A</a></li>
+                  </ul>
+                </li>     
+              </ul>
+            </div>
+          </div>
+      </div>  
+      <div id="search_toggle">
+        <ul>	
+            <li class="search_toggle">
+            <a href="#"><img src="img/search_bar.png" alt="검색이미지" /></a>
+            </li>
+        </ul>
+      </div>
+      <div id="my_icon"><a href="login.html"><img src="img/login.png" alt="로그인아이콘"></a></div>
+      
+      <!-- 검색창 -->
+      <div id="search_wrap">
+        <form action="#" method="get">
+        <fieldset>		
+        <legend>검색</legend>
+            <input type="search" placeholder="검색어를 입력해 주세요."/>
+            <input type="image" src="img/search_bar.png" alt="검색바이미지">
+        </fieldset>
+        </form>
+      </div>
+    </nav>
+</header><!-- header end -->
+
+ <!-- Container for the image gallery -->
+  <div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+      <img src="img/face1-con.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+      <img src="img/face2-con.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+      <img src="img/face3-con.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+      <img src="img/face4-con.jpg" style="width:100%">
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption">Click on the img</p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/face1-con_mini.png" style="width:100%" onclick="currentSlide(1)" alt="SECOND SKIN CONCEALER">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/face2-con_mini.jpg" style="width:100%" onclick="currentSlide(2)" alt="SECOND SKIN CONCEALER">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/face3-con_mini.jpg" style="width:100%" onclick="currentSlide(3)" alt="SECOND SKIN CONCEALER">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/face4-con_mini.jpg" style="width:100%" onclick="currentSlide(4)" alt="SECOND SKIN CONCEALER">
+    </div>
+  </div><!-- row end -->
+ </div><!-- container-image gallery end -->
+
+
+<div id="spec">
+			<!--컬러-->
+     <div class="con2">
+                
+				<h2>세컨 스킨 커버 컨실러</h2>
+			    <p>+전용 브러쉬 증정</p>
+				<ul>
+                    <li>
+					 <form action="#" name="form1" class="formc">
+				      <fieldset>
+
+				       <legend class="blind">가격계산폼</legend>
+				       <label for="su1">￦</label>17,000 <br><br>
+
+					   <select name="fColor" id="fc" onChange="fcolorChange()">
+					   <option value="--">SELECT COLOR</option>
+					   <option value="#eed3b9">17호 페어</option>
+					   <option value="#efd1b1">21호 라이트</option>
+					   <option value="#eecdad">22호 미디엄</option>
+					   <option value="#eccaa6">23호 내추럴</option>
+					   <option value="#ebc99f">24호 딥</option>
+				      </select><br><br>
+                      <div class="tVal">color</div>
+				      <br>
+
+				       <input type="hidden" name="su1" id="su1"  value="17000"/><br />
+				       <label for="su2">수량</label>:<input type="number" min="1" max="10" start="1"  name="su2" id="su2" value="1"/> 
+				       <br />	  
+				      <input type="text" id="resVal" /> <br />	 <br />
+				      <input type="button" value="TOTAL" onclick="cal_print(su1.value,su2.value);" id="total" />&nbsp;	 
+				      <a href="cart.html"><input type="button" id="shopping" onclick="basketGo()" value="CART"/></a><br />	    
+				      </fieldset>
+				     </form>   				
+					</li>			
+				</ul>
+     </div>
+			<div class="specimg">
+				<li><img src="img/face_detail.jpg"  alt="제품상세이미지1" style="width:100%"/></li>
+			</div>
+</div><!--spec-->	
+		
+
+<!--제품 상세 안내사항-->
+			<div class="costomer">
+				<div class="cont cont1">
+					<dl>
+						<dt>상품정보 / 전성분 안내<span><img src="img/enter.png" alt="보기" /></span></dt>
+						<dd>본 상품정보는 [공정거래위원회의 전자상거래 등에서의 상품정보제공 고시]에 따라 작성되었습니다.<br /><br>
+							
+						제품 요약정보
+						용량 : 40ml
+						사용방법 : 손등에 적당량을 덜어낸 뒤 브러쉬로 제형을 얇게 펴바르고 가볍게 두드려 마무리해주세요.
+						조금 더 커버가 필요한 부분에 원하는 만큼 덧발라 타고난 듯 감쪽같이 자연스러운 피부를 연출합니다.
+						사용기한 : 30개월 (제조번호별 사용기한이 상이하므로 정확한 날짜 확인이 필요하신 경우 게시판 또는 1644-7161로 문의 부탁드립니다.)
+						제조국 : 한국 
+						화장품책임판매업자 및 화장품제조업자 : 주식회사 비바웨이브 / 코스메카코리아
+						기능성 화장품의 경우 화장품법에 따른 식품의약품안전처 심사 필 유무 : 자외선 차단 기능성 화장품 
+						소비자상담관련 전화번호 : 1644-7161
+						품질보증기준 : 본 제품에 이상이 있을 경우 공정거래위원회 고시 품목별 소비자 분쟁 해결 기준에 의해 보상해 드립니다.
+						사용 시의 주의사항 : 1) 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것 2) 상처가 있는 부위 등에는 사용을 자제할 것 3) 보관 및 취급 시의 주의사항 가) 어린이의 손이 닿지 않는 곳에 보관할 것 나) 직사광선을 피해서 보관할 것
+
+						전성분 표시
+						[17호 포슬린]
+						정제수, 메틸트라이메티콘, 티타늄디옥사이드, 부틸렌글라이콜, 다이메티콘, 페닐트라이메티콘, 변성알코올, 라우릴피이지-8다이메티콘, 실리카, 사이클로펜타실록세인, 피이지-9폴리다이메틸실록시에틸다이메티콘, 소듐클로라이드, 피이지-10다이메티콘, 마이카, 황색산화철, 알루미나, 세틸피이지/피피지-10/1다이메티콘, 쇠비름추출물, 알루미늄하이드록사이드, 판테놀, 트라이에톡시카프릴릴실레인, 솔비탄세스퀴올리에이트, 다이스테아다이모늄헥토라이트, 스테아릭애씨드, 소듐벤조에이트, 아크릴레이트/다이메티콘코폴리머, 향료, 적색산화철, 포타슘솔베이트, 소듐미리스토일글루타메이트, 다이소듐스테아로일글루타메이트, 트라이에틸시트레이트, 폴리실리콘-11, 폴리하이드록시스테아릭애씨드, 다이소듐이디티에이, 에틸헥실팔미테이트, 아이소프로필미리스테이트, 아이소스테아릭애씨드, 레시틴, 흑색산화철, 하이드로제네이티드레시틴, 폴리글리세릴-3폴리리시놀리에이트, 부틸페닐메틸프로피오날, 리모넨
+						[21호 아이보리]
+						정제수, 메틸트라이메티콘, 티타늄디옥사이드, 부틸렌글라이콜, 다이메티콘, 페닐트라이메티콘, 변성알코올, 라우릴피이지-8다이메티콘, 실리카, 사이클로펜타실록세인, 피이지-9폴리다이메틸실록시에틸다이메티콘, 소듐클로라이드, 피이지-10다이메티콘, 마이카, 황색산화철, 알루미나, 세틸피이지/피피지-10/1다이메티콘, 쇠비름추출물, 알루미늄하이드록사이드, 판테놀, 트라이에톡시카프릴릴실레인, 솔비탄세스퀴올리에이트, 다이스테아다이모늄헥토라이트, 스테아릭애씨드, 소듐벤조에이트, 아크릴레이트/다이메티콘코폴리머, 향료, 적색산화철, 포타슘솔베이트, 소듐미리스토일글루타메이트, 다이소듐스테아로일글루타메이트, 트라이에틸시트레이트, 폴리실리콘-11, 폴리하이드록시스테아릭애씨드, 다이소듐이디티에이, 흑색산화철, 에틸헥실팔미테이트, 아이소프로필미리스테이트, 아이소스테아릭애씨드, 레시틴, 하이드로제네이티드레시틴, 폴리글리세릴-3폴리리시놀리에이트, 부틸페닐메틸프로피오날, 리모넨
+						</dd>
+						<dt>배송 / 교환 / 반품 안내<span><img src="img/enter.png" alt="보기" /></span></dt>
+						<dd>변심 반품의 경우 왕복배송비를 차감한 금액이 환불되며, 제품 및 포장 상태가 재판매 가능하여야 합니다.<br /><br>
+														배송안내
+							힌스 공식몰은 CJ대한통운택배를 이용하며 기본 배송비 2,500원입니다. 무료배송은 50,000원 이상 구매시 적용됩니다.
+							더불어 상품의 평균 배송일은 입금 확인 후 2~3일 입니다. (연휴 및 공휴일은 제외됩니다)
+							교환 및 반품 안내
+							단순 변심으로 인한 교환 및 반품은 7일 이내 접수 시 가능합니다. 사용 후 피부 트러블로 인한 교환 및 반품은 20일 이내 접수 후 1:1 문의게시판에 접수하여 주시면 절차를 안내드립니다.
+							취소/교환/반품하시는 상품 및 신청사유에 따라 배송비 환불 또는 추가 배송비가 발생할 수 있습니다.
+							배송비는 쇼핑몰 정책에 따라 책정됩니다.
+							단, 포장 훼손 / 사용 흔적 있는 상품 / 상품 수령 후 7일이 지난 시점의 교환 및 반품은 불가능한 점 양해 부탁드립니다.
+						</dd>
+				</div><!-- cont1 -->
+             </div><!-- customer end -->
+
+ <div class="box box5">
+	 <div id="event2">
+		 <div class="event2_text">
+		   <div id="img_wrap">
+           <ul id="na">
+	       </ul>
+          </div><!-- img_wrap -->
+	     </div>
+	 </div>
+<div id="footer">
+	  <div class="inner">
+	  <div id ="left">
+       <div class="logo"><img src="img/hlogo.gif" alt="푸터로고">
+	   <div class="company">
+	    <p>
+	     Company / Legal
+		VIVAWAVE Co., Ltd.<br>|CEO. Heo Jaeseok <br>
+		Seogyo-dong, Namoo Building 3F, 41, <br>
+		Yanghwa-ro 7an-gil, Mapo-gu, <br>
+		Seoul, Republic of Korea <br>
+		Business Registraion No. 632-88-00936 <br>
+		</p> 
+	    <h2>1644-7161</h2>
+		<p>Fax. 02-6008-2717
+		<br>Email. cs@vivawave.co.kr <br>
+		<br>11:00 - 17:00
+		<br>토,일요일 휴무
+		<br><br>
+		© 2020 VIVAWAVE Co., Ltd. All rights reserved.</p>
+		</div>
+	  </div><!-- left end -->
+	 </div><!-- inner end -->
+	 <div id="right">
+		<ul class="nav">
+		 <li>
+		 	<ul>About Hince
+			 <li>힌스소개</li>
+			 <li>힌스아틀리에</li>
+			 <li>힌스멤버십프로그램</li>
+			 <li></li>
+			</ul>
+			<ul>Order tracking
+			 <li>배송조회</li>
+		    </ul>
+			<ul>Partnership
+			 <li>도매/제휴문의</li>
+			 <li>해외수출문의</li>
+		    </ul>
+			<ul>SNS
+			 <li>instagram</li>
+			 <li>Kakaotalk</li>
+			 <li>Twitter</li>
+			 <li>Weibo</li>
+		    </ul>
+		 </li>	 
+		</ul>		
+	 </div><!-- right end -->
+ </div><!-- footer END -->
+</div><!-- box5 footer end -->
+
+</div><!-- wrap end -->
+
+ <!-- script link -->
+  <script>
+  function shopGo(){
+	   alert('continue shopping');
+	   location.href="index.html";
+	 }
+  function fcolorChange() {
+    var sel = document.getElementById('fc');
+
+	var fValue;
+	for(var i=0;i<sel.options.length;i++){
+	   if(sel.options[0].selected==true){
+	      alert('색상선택');
+		  return false;
+	   }else if(sel.options[i].selected == true){
+	      fValue = sel.options[i].value;
+          $('.tVal').text(fValue).css('background',''+fValue+'');
+		  break;
+	   }
+	} //for end
+  } 
+  function comma(num){
+    var len, point, str;  
+       
+    num = num + "";  
+    point = num.length % 3 ;
+	
+    len = num.length;  
+   
+    str = num.substring(0, point);  
+    while (point < len) {  
+        if (str != "") str += ",";  
+        str += num.substring(point, point + 3);  
+        point += 3;  
+    }  
+     
+    return str;
+ 
+   }
+  
+  function cal_print(num,num2){
+	 
+	   var snum=num;
+	   var snum2=num2;
+
+	   var res =snum*snum2;
+	   var result = comma(res);
+	   
+	    /*document.getElementById("resVal").innerHTML=result+"원";*/
+       document.getElementById("resVal").value=result+"원";
+  }
+  </script>
+  </body>
+</html>
